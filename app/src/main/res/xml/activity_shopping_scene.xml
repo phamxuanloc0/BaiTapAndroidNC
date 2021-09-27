@@ -8,10 +8,57 @@
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
        <KeyFrameSet>
+           <KeyPosition
+               motion:motionTarget="@+id/id_taynghe"
+               motion:framePosition="50"
+               motion:keyPositionType="pathRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.3" />
+           <KeyPosition
+               motion:motionTarget="@+id/bt_taynghe"
+               motion:framePosition="34"
+               motion:keyPositionType="pathRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.3" />
+           <KeyPosition
+               motion:motionTarget="@+id/id_mayanh"
+               motion:framePosition="75"
+               motion:keyPositionType="pathRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.2" />
+           <KeyAttribute
+               motion:motionTarget="@+id/id_taynghe"
+               motion:framePosition="36"
+               android:alpha="0.5" />
+           <KeyPosition
+               motion:motionTarget="@+id/bt_mayanh"
+               motion:framePosition="0"
+               motion:keyPositionType="pathRelative"
+               motion:percentX="0.5"
+               motion:percentY="0.3" />
        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/bt_taynghe" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/shopping"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="170dp"
+            android:layout_height="66dp"
+            motion:layout_constraintHorizontal_bias="0.497"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" />
+        <Constraint
+            android:id="@+id/id_shopping"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="170dp"
+            android:layout_height="66dp"
+            motion:layout_constraintHorizontal_bias="0.497"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
@@ -33,5 +80,99 @@
             android:layout_width="68dp"
             android:id="@+id/imageView3"
             android:layout_marginTop="252dp" />
+        <Constraint
+            android:layout_height="21dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.529"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="39dp"
+            android:id="@+id/button"
+            android:layout_marginTop="600dp" />
+        <Constraint
+            android:layout_height="39dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="592dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.541"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="35dp"
+            android:id="@+id/imageView2" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="68dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView5" />
+        <Constraint
+            android:layout_height="21dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="600dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.512"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="23dp"
+            android:id="@+id/id_taynghe" />
+        <Constraint
+            android:layout_height="22dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="600dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.529"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="25dp"
+            android:id="@+id/bt_taynghe" />
     </ConstraintSet>
+    <ConstraintSet android:id="@+id/id_endmayanh" >
+        <Constraint
+            android:layout_height="27dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="600dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.527"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="35dp"
+            android:id="@+id/id_mayanh" />
+        <Constraint
+            android:layout_height="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="600dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.535"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="22dp"
+            android:id="@+id/bt_mayanh" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/id_endmayanh" >
+        <OnClick motion:targetId="@+id/bt_mayanh" />
+    </Transition>
+    <ConstraintSet android:id="@+id/id_endgame" >
+        <Constraint
+            android:layout_height="52dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="596dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.537"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="61dp"
+            android:id="@+id/bt_game" />
+        <Constraint
+            android:layout_height="57dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="592dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.521"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="58dp"
+            android:id="@+id/id_game" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/id_endgame" >
+        <OnClick motion:targetId="@+id/bt_game" />
+    </Transition>
 </MotionScene>

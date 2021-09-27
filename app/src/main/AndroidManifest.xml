@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BaiTapAndroidNC">
         <activity
+            android:name=".music"
+            android:exported="true" />
+        <activity
             android:name=".shopping"
             android:exported="true" />
         <activity
